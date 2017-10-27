@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/asm.css">
+	</head>
+	<body>
+		<!-- HEADER NAVBAR Begin-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      	<a class="navbar-brand" href="https://www.youtube.com/">YOUTUBE</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav">
+			        <li class="active">
+			        	<a href="#">
+			        		<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			        		Trang chủ 
+			        		<span class="sr-only">(current)</span>
+			        	</a>
+			        </li> 
+
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          		<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+			          		Chức năng 
+			          		<span class="caret"></span>
+			          	</a>
+			          	<ul class="dropdown-menu">
+				            <li>
+				               	<a href="#">
+				            		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				            		Thêm video
+				            	</a>
+				            </li>
+				            <li>
+				            	<a href="#">
+				            		<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+				            		Playlist
+				            	</a>
+				            </li>		         
+			          	</ul>
+			        </li>
+		      	</ul>
+		      	<form class="navbar-form navbar-left">
+		        	<div class="form-group">
+		          		<input type="text" class="form-control" placeholder="Search">
+		        	</div>
+		        	<button type="submit" class="btn btn-default">Submit</button>
+		      	</form>
+		      	<!-- ĐĂNG NHẬP VÀ ĐĂNG KÝ -->
+		      	<ul class="nav navbar-nav navbar-right">
+		        	<li>
+		        		<!-- ĐĂNG KÝ -->
+		        		<!-- <div class="" -->
+		        		<button type="button" class="btn btn-primary btn-submit" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+		        			<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+		        			Đăng ký
+		        		</button>
+		
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+
+						      <div class="modal-header panel panel-success bg-blue">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h4 class="modal-title" id="exampleModalLabel"><b>Xin mời bạn đăng ký</b></h4>
+						      </div>
+
+						      <div class="modal-body">
+						        <form>
+						        	
+									<div class="form-group ">
+									    <label for="exampleInputEmail1">Tài khoản</label>
+										<div class="input-group">
+										  	<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+										  	<input type="text" class="form-control" placeholder="Tài khoản" aria-describedby="sizing-addon1">
+										</div>					    
+								  	</div>
+								  	<div class="form-group">
+								    	<label for="exampleInputPassword1">Password</label>
+								    	<div class="input-group">
+								    		<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+								    		<input type="password" class="form-control" placeholder="Mật khẩu" aria-describedby="sizing-addon1">
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label for="exampleInputPassword1">Repeat Password</label>
+
+										<div class="input-group">
+										  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></span>
+										  <input type="text" class="form-control" placeholder="Nhắc lại Mật khẩu" aria-describedby="sizing-addon1">
+										</div>
+								  	</div>
+
+								  	<div class="form-group">
+									    <label for="exampleInputEmail1">Họ và tên</label>
+
+									    <div class="input-group">
+										  	<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+										  	<input type="text" class="form-control" placeholder="Họ và tên đầy đủ" aria-describedby="sizing-addon1">
+										</div>	
+								  	</div>
+
+								  	<div class="form-group ">
+									    <label for="exampleInputEmail1">Email address</label>
+									    
+									    <div class="input-group">
+									    	<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+									    	
+									    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+									    	<span class="input-group-addon" id="basic-addon2">@example.com</span>
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+								   		<label for="exampleInputEmail1">Ngày sinh</label>
+								   		<input type="date" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/yyyy">
+								  	</div>
+								  
+								  <div class="form-group">
+								    <label for="exampleInputFile">Gender</label>
+
+								    <select class="form-control ng-pristine ng-valid ng-not-empty ng-valid-required ng-touched" ng-model="userSignupData.data.attributes.gender" required="">
+									  	<option value="1">Nam</option>
+									 	<option value="0">Nữ</option>
+									  	<option value="2">Khác</option>							  
+									</select>								    			    
+								  </div>
+								 
+								</form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="submit" class="btn btn-default" data-dismiss="modal">
+						        	<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+						        	Làm lại
+						        </button>
+						        <button type="reset" class="btn btn-primary">
+						        	<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+						        	Đăng ký
+						    	</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</li>
+		        		<!-- ĐĂNG NHẬP -->
+		        	<li class="dropdown">		        		
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          		<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+			          		Đăng nhập 
+			          		<span class="caret"></span>
+			          	</a>
+			          	<ul class="dropdown-menu">
+				            <li>
+				            	<form class="form-margin">
+									<div class="form-group">					    
+									    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tên đăng nhập">
+									</div>
+									<div class="form-group">
+									    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+									</div>
+									<div class="help-block text-right">
+										<a href="#">Quên mật khẩu?</a>
+									</div>
+									<div class="form-group">
+										<button type="button" class="btn btn-primary btn-block" ng-click="signin()">Đăng nhập</button>					    
+									</div>
+									<div class="text-center">
+                   						Chưa có tài khoản? 
+                   						<a href="#!signup"><b>Đăng ký</b></a>
+                   					</div>
+								</form> 
+				            </li>
+			          	</ul>
+			        </li>	
+ 	       
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- HEADER NAVBAR End-->
+
+
+
+
+
+
+
+
+
+		<!-- END -->
+	  <script src="js/jquery-3.2.1.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
